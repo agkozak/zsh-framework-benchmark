@@ -2,7 +2,7 @@
 local -r home_dir=${1}
 
 # download the repository
-command curl -Ss -L git.io/antigen > ${home_dir}/antigen.zsh
+command curl -Ss -L https://raw.githubusercontent.com/zsh-users/antigen/master/bin/antigen.zsh > ${home_dir}/antigen.zsh
 
 # add modules to .zshrc
 print 'source ${HOME}/antigen.zsh

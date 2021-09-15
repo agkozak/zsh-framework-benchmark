@@ -2,7 +2,7 @@
 local -r home_dir=${1}
 
 # install antibody
-[[ ! -e ${home_dir}/bin/antibody ]] && command curl -sL git.io/antibody | sh -s - -b ${home_dir}/bin
+[[ ! -e ${home_dir}/bin/antibody ]] && command curl -sL https://raw.githubusercontent.com/getantibody/installer/master/install | sh -s - -b ${home_dir}/bin
 
 print '
 zimfw/environment
