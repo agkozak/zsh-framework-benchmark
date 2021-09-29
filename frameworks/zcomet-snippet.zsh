@@ -13,18 +13,18 @@
   # add modules to .zshrc
   >| ${home_dir}/.zshrc <<\END
 source ${HOME}/zcomet.zsh
-zcomet load zimfw/environment
+zcomet snippet https://github.com/zimfw/environment/blob/master/init.zsh
 zcomet load zimfw/git
-zcomet load zimfw/input
-zcomet load zimfw/termtitle
+zcomet snippet https://github.com/zimfw/input/blob/master/init.zsh
+zcomet snippet https://github.com/zimfw/termtitle/blob/master/init.zsh
 zcomet load zimfw/utility
 zcomet load zimfw/duration-info
 zcomet load zimfw/git-info
-zcomet load zimfw/asciiship
+zcomet snippet https://github.com/zimfw/asciiship/blob/master/asciiship.zsh-theme
 zcomet fpath zsh-users/zsh-completions src
 zcomet load zsh-users/zsh-autosuggestions
 zcomet load zsh-users/zsh-syntax-highlighting
-zcomet load zsh-users/zsh-history-substring-search
+zcomet snippet https://github.com/zsh-users/zsh-history-substring-search/blob/master/zsh-history-substring-search.zsh
 
 [[ $TERM != dumb ]] && zcomet compinit
 
